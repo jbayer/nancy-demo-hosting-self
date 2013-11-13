@@ -14,7 +14,7 @@ You must set environment variables for the hostname and domain where the applica
 Here are some examples with the beta release of cf v6 cli, known as gcf during the beta period using run.pivotal.io as an example.
 
 ```
-$ gcf push nancy-demo-hosting-self -m 512 -n someavailablehostname --no-start
+$ gcf push nancy-demo-hosting-self -m 512 -n someavailablehostname --no-start -b https://github.com/jbayer/nancy-demo-hosting-self.git
 $ gcf set-env nancy-demo-hosting-self DOMAIN cfapps.io
 Setting env variable domain for app nancy-demo-hosting-self in org jbayer-normal-org / space development as jbayer+normal@gopivotal.com...
 OK
