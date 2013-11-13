@@ -9,8 +9,8 @@ namespace Nancy.Demo.Hosting.Self
     {
         static void Main()
         {
-            var hostname = "System.Environment.GetEnvironmentVariable("HOSTNAME");";
-            var domain = "System.Environment.GetEnvironmentVariable("DOMAIN");";
+            var hostname = System.Environment.GetEnvironmentVariable("HOSTNAME");
+            var domain = System.Environment.GetEnvironmentVariable("DOMAIN");
 
             var port = System.Environment.GetEnvironmentVariable("PORT");
             var nancyHost = new NancyHost(new Uri("http://" + hostname + "." + domain + ":" + port), new Uri("http://0.0.0.0:" + port));
