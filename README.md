@@ -9,7 +9,7 @@ Before deploying your source code you will need to ensure that it builds locally
 
 Run on Cloud Foundry
 --------------------
-You must set environment variables for the hostname and domain where the application will run.
+You must set environment variables for the HOSTNAME and DOMAIN where the application will run.
 
 Here are some examples with the beta release of cf v6 cli, known as gcf during the beta period using run.pivotal.io as an example.
 
