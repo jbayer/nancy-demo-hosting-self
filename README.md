@@ -15,14 +15,15 @@ Here are some examples with the beta release of cf v6 cli, known as gcf during t
 
 ```
 $ gcf push nancy-demo-hosting-self -m 512 -n someavailablehostname --no-start
-$ gcf set-env nancy-demo-hosting-self domain cfapps.io
+$ gcf set-env nancy-demo-hosting-self DOMAIN cfapps.io
 Setting env variable domain for app nancy-demo-hosting-self in org jbayer-normal-org / space development as jbayer+normal@gopivotal.com...
 OK
-$ gcf set-env nancy-demo-hosting-self hostname someavailablehostname
+$ gcf set-env nancy-demo-hosting-self HOSTNAME someavailablehostname
 Setting env variable hostname for app nancy-demo-hosting-self in org jbayer-normal-org / space development as jbayer+normal@gopivotal.com...
 OK
 $ gcf start nancy-demo-hosting-self
 ```
+
 Note that it is mandatory to set the environment variables for hostname and domain. You could also derive these values at runtime by parsing these values out of VCAP_APPLICATION env variable, but this works for now as a proof of concept.
 
 Procfile
